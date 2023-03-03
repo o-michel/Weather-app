@@ -1,3 +1,5 @@
+
+
 :root{
     margin: 0;
     padding: 0;
@@ -16,8 +18,90 @@
     min-height: 100%;
 }
 
-.container{
-    position: absolute;
-    color: aliceblue;
+body{
+    font-family: 'Cormorant Garamond', serif;
+    /* font-weight: bold; */
+    font-size: 1.5em;
+    /* position: absolute; */
+    display: flex;
+/* flex-direction: column; */
+    justify-content: center;
+/* align-items: center; */
 }
 
+
+.container{
+    position: absolute;
+    /* width: 600px; */
+    width: 95%;
+    /* height: 100%; */
+    /* margin: 5px auto; */
+    
+    max-width: 700px;
+    
+    /* background-color: aqua; */
+    color: rgba(2, 5, 34, 0.822);
+}
+
+
+.nav{
+    /* width: 300px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+
+.right-nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: space-evenly;
+    /* background-color: blue; */
+}
+
+.time-date{
+    /* background-color: blue; */
+    
+}
+
+.header{
+    /* background-color: white; */
+    /* width: fit-content; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 2rem auto; */
+
+}
+
+.location-name{
+    font-size: 1rem;
+
+}
+
+.temperature{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    /* background-color: rgb(209, 200, 146); */
+    margin-top: -3rem;
+}
+
+span.cel{
+    position: relative;
+    font-size: 2rem;
+    /* background-color: gold; */
+    /* text-align: start; */
+    /* margin-top: 15.5em; */
+}
+
+.discripton,
+.temperatureRange{
+    font-size: 1.2rem;
+}
