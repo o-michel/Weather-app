@@ -7,6 +7,12 @@ const discribe = document.getElementById('discribe');
 const fullTimeEle = document.getElementById("fullTime")
 const fullDateEle = document.getElementById("fullDate")
 
+const windEle = document.getElementById("wind")
+const tempEle = document.getElementById("TEMP")
+const humEle = document.getElementById("hum")
+const dewPEle = document.getElementById("dewP")
+
+
 
 
 const intDay = ['Sunday', 'Monday', 'Tuesday', 'Wednessday', 'Thursday','Friday','Satursday'];
@@ -42,8 +48,20 @@ const getWeatherData = ()=>{
 
         let { latitude, longitude} = success.coords;
 
-        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&appid=${APIkey}`).then(res => res.json()).then(data => {
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&appid=${APIkey}&units=metric`).then(res => res.json()).then(data => {
             console.log(data);
+            let {clouds, feels_like, dew_point, humidity, pressure, temp, wind_speed, weather} = data.current;
+            
+            discribe.innerHTML = weather[0].description
+            // console.log(weather);
+
+            locationEle.innerHTML = data.timezone;
+
+            windEle.innerHTML = `WIND <br> ${wind_speed} <span>mph</span> `
+            tempEle.innerHTML = `TEMPERATURE <br> ${temp} <span>°C</span>`
+            humEle.innerHTML = `HUMIDITY <br> ${humidity} <span>%</span>`
+            dewPEle.innerHTML = ` DEW POINT <br> ${dew_point} <span>°f</span>`
+            
         })
     })
 

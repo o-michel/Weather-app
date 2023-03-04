@@ -105,3 +105,30 @@ span.cel{
 .temperatureRange{
     font-size: 1.2rem;
 }
+
+
+.body{
+    margin-top: 2rem;
+    /* background-color: red; */
+    /* font: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.status{
+    margin: 1rem;
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size: 1.3rem;
+    /* width: 70%; */
+    /* width: 500px; */
+    /* background-color: blue; */
+}
+
+.status span{
+    /* background-color: aliceblue; */
+    font-size: 1rem;
+}
