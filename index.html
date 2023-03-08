@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/52901e0465.css" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap"
+        rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body background="">
     <video autoplay muted loop id="myVideo">
-        <source src="./resources/video/06_1596083776.mp4" type="video/mp4">
+        <source src="./resources/video/06_1596083776.mp4" type="video/mp4" />
     </video>
     <div class="container">
         <!-- Nav section -->
         <div class="nav">
             <div class="time-date">
-                <div class="time" id="fullTime">2:25 <span class="ampms" id="ampm">pm</span></div>
+                <div class="time" id="fullTime">
+                    2:25 <span class="ampms" id="ampm">pm</span>
+                </div>
                 <div class="date" id="fullDate">Monday, 24 May</div>
             </div>
             <div class="right-nav">
-                <div class="fa fa-search" id="search"> <span class="material-symbols-outlined">
-                    search
-                    </span></div>
-                <div class="menu-icon" id="menu"><span class="material-symbols-outlined">
-                    menu
-                    </span></div>
+                <div class="fa fa-search" id="search">
+                    <span class="material-symbols-outlined"> search </span>
+                </div>
+                <div class="menu-icon" id="menu">
+                    <span class="material-symbols-outlined"> menu </span>
+                </div>
             </div>
         </div>
-
 
         <!-- Header section -->
         <div class="header">
             <div class="location-name" id="location">Ibadan</div>
-            <div class="temperature" id="temp">33 <span class="cel" id="celcious">°C</span></div>
+            <div class="temperature" id="temp">
+                33 <span class="cel" id="celcious">°C</span>
+            </div>
             <div class="temperatureRange" id="tempRange">36/26°C</div>
             <div class="discripton" id="discribe">clear</div>
             <!-- <i class="fa fa-search" aria-hidden="false"></i> -->
@@ -48,16 +55,81 @@
 
         <!-- body section -->
         <div class="body">
-            <div class="status" id="wind">WIND <br> 2 <span>mph</span>  </div>
-            <div class="status" id="TEMP">TEMPERATURE <br> 26 <span>°C</span></div>
-            <div class="status" id="hum">HUMIDITY <br> 63 <span>%</span></div>
-            <div class="status" id="dewP"> DEW POINT <br> 38 <span>°f</span></div>
-            <div class="status" id=""></div>
-            <div class="status" id="">UV INDEX <br> 2 <span>(low)</span></div>
+            <div class="status" id="wind">
+                WIND <br />
+                2 <span>mph</span>
+            </div>
+            <div class="status" id="TEMP">
+                TEMPERATURE <br />
+                26 <span>°C</span>
+            </div>
+            <div class="status" id="hum">
+                HUMIDITY <br />
+                63 <span>%</span>
+            </div>
+            <!-- <div class="status" id="dewP">
+                DEW POINT <br />
+                38 <span>°f</span>
+            </div>
+            <div class="status" id=""></div> -->
+            <!-- <div class="status" id="">
+                UV INDEX <br />
+                2 <span>(low)</span>
+            </div> -->
+        </div>
+
+        <!-- bottom Section -->
+        <div class="body_bottom">
+            <div class="current_day">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="today_icon" />
+                <div class="cd_right_side">
+                    <div class="day">today</div>
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6 °C</div>
+                </div>
+            </div>
+            <div class=" another other_days">
+                <div class="child">
+                    <div class="day">today</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="today_icon" />
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6 °C</div>
+                </div>
+                <div class="child other_days">
+                    <div class="day">today</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="today_icon" />
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6 °C</div>
+                </div>
+                <div class="child other_days">
+                    <div class="day">today</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="today_icon" />
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6 °C</div>
+                </div>
+                <div class="child other_days">
+                    <div class="day">today</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="today_icon" />
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6 °C</div>
+                </div>
+                <div class="child other_days">
+                    <div class="day">today</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="today_icon" />
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6 °C</div>
+                </div>
+                <div class="child other_days">
+                    <div class="day">today</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="today_icon" />
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6 °C</div>
+                </div>
+            </div>
         </div>
     </div>
 
-
     <script src="script.js"></script>
 </body>
+
 </html>

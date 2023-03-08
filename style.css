@@ -132,3 +132,45 @@ span.cel{
     /* background-color: aliceblue; */
     font-size: 1rem;
 }
+
+
+
+/* bottom body */
+.body_bottom{
+    background-color: rgba(187, 188, 218, 0.329);
+    padding: 5px 15px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+
+    /* justify-content: start; */
+    /* align-items: none; */
+    /* overflow-x: scroll; */
+
+    /* scroll-snap-type: none; */
+    /* overflow-x: scroll; */
+    /* overflow-block: hidden; */
+    /* overflow-wrap: break-word; */
+}
+
+.another{
+    display: flex;
+}
+
+.child{
+    padding: 20px;
+}
+
+
+@media only screen and (max-width:730px) {
+    .body_bottom{
+        justify-content: start; 
+        align-items: none; 
+        overflow-y: scroll; 
+    }
+    
+}
