@@ -60,7 +60,7 @@ const getWeatherData = ()=>{
             windEle.innerHTML = `WIND <br> ${wind_speed} <span>mph</span> `
             tempEle.innerHTML = `TEMPERATURE <br> ${temp} <span>°C</span>`
             humEle.innerHTML = `HUMIDITY <br> ${humidity} <span>%</span>`
-            dewPEle.innerHTML = ` DEW POINT <br> ${dew_point} <span>°f</span>`
+            // dewPEle.innerHTML = ` DEW POINT <br> ${dew_point} <span>°f</span>`
             
         })
     })
