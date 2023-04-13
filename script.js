@@ -47,7 +47,7 @@ const getWeatherData = ()=>{
         // console.log(success);
 
         let { latitude, longitude} = success.coords;
-
+ 
         fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&appid=${APIkey}&units=metric`).then(res => res.json()).then(data => {
             console.log(data);
             let {clouds, feels_like, dew_point, humidity, pressure, temp, wind_speed, weather} = data.current;
